@@ -5,7 +5,11 @@ package Exercicio8;
 //  Métodos: crédito que entra dinheiro e débito que sai dinheiro. - no main tenha laço perguntando quantos lançamentos
 //  deseja e sempre pergunte se crédito ou débito e no final fala o saldo final.
 public class Caixa {
-    double saldo;
+    private double saldo;
+
+    public double getSaldo() {
+        return saldo;
+    }
 
     public Caixa() {
         this.saldo = 1000.00;
@@ -18,4 +22,9 @@ public class Caixa {
     public void debito(double valor) {
         saldo -= valor;
     }
+
+    public void printSaldo() {
+        System.out.println("Saldo final: R$" + this.saldo);
+    }
 }
+

@@ -1,5 +1,7 @@
 package Exercicio8;
+
 import java.util.Scanner;
+
 public class CreditoOuDebito {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class CreditoOuDebito {
         Caixa caixa = new Caixa();
 
         System.out.println("Bem-vindo ao caixa!");
-        System.out.println("Saldo inicial: R$" + caixa.saldo);
+        System.out.println("Saldo inicial: R$" + caixa.getSaldo());
 
         System.out.println("Quantos lançamentos deseja realizar?");
         int quantidadeLancamentos = entrada.nextInt();
@@ -29,7 +31,7 @@ public class CreditoOuDebito {
                 System.out.println("Opção inválida. Ignorando lançamento.");
             }
         }
-
-        System.out.println("Saldo final: R$" + caixa.saldo);
+// TODO: 13/06/2023 Criar na classe caixa um print saldo(public) se for menor mudar de cor para vermelho.
+        caixa.printSaldo();
     }
 }
