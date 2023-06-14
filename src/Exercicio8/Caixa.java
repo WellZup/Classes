@@ -7,6 +7,10 @@ package Exercicio8;
 public class Caixa {
     private double saldo;
 
+    public static final String ANSI_RESET = "\u001B[0m";
+    // Declaring the background color
+    public static final String ANSI_RED_BACKGROUND= "\u001B[41m";
+
     public double getSaldo() {
         return saldo;
     }
@@ -20,11 +24,17 @@ public class Caixa {
     }
 
     public void debito(double valor) {
+        if (valor <= saldo){
         saldo -= valor;
+        }else {
+            System.out.println(ANSI_RED_BACKGROUND
+                    + "Saldo insuficiente para retirada"
+                    + ANSI_RESET);
+        }
     }
 
     public void printSaldo() {
-        System.out.println("Saldo final: R$" + this.saldo);
+        System.out.println("Seu saldo é: R$" + this.saldo);
     }
 }
 
