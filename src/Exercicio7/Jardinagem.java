@@ -32,7 +32,7 @@ public class Jardinagem {
     }
 
     public double precoAdubo(){
-        double aduboUsado = usarAdubo();
+        var aduboUsado = usarAdubo();
         return aduboUsado = valorAdubo;
     }
 
