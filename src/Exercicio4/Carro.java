@@ -11,9 +11,7 @@ public class Carro {
     double potencia;
 
     public Carro() {
-        this.qtPortas = qtPortas;
-        this.modelo = modelo;
-        this.marca = marca;
+
         this.potencia = 2.0;
     }
 

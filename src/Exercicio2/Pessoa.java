@@ -13,13 +13,7 @@ public class Pessoa {
     double altura;
 
 
-    public Pessoa() {
-        this.nome = nome;
-        this.idade = idade;
-        this.idadeAtual = idadeAtual;
-        //this.peso = peso;
-        this.altura = altura;
-    }
+
 
     public void setNome(String nome) {
         this.nome = nome;

@@ -31,25 +31,25 @@ public class EscolhaCarro {
                 carro.setModelo("FORD");
                 carro.setMarca("KA");
                 System.out.println("Ótima escolha");
-                carro.ligarCarro();
+
                 break;
             case 3:
                 carro.setModelo("VOLKSWAGEN");
                 carro.setMarca("UP");
                 System.out.println("Ótima escolha");
-                carro.ligarCarro();
+
                 break;
             case 4:
                 carro.setModelo("TOYOTA");
                 carro.setMarca("Corolla");
                 System.out.println("Ótima escolha");
-                carro.ligarCarro();
+
                 break;
             case 5:
                 carro.setModelo("RANGER ROVER");
                 carro.setMarca("Sport");
                 System.out.println("Ótima escolha");
-                carro.ligarCarro();
+
                 break;
             case 0:
                 System.out.println("Saindo do programa...");
@@ -60,40 +60,7 @@ public class EscolhaCarro {
 
         System.out.println();
 
-//        int opcaoModelo = entrada.nextInt();
-//
-//        switch (opcaoModelo) {
-//            case 1:
-//                carro.setModelo("FIAT");
-//                System.out.println("Ótima escolha");
-//
-//                break;
-//            case 2:
-//                carro.setModelo("FORD");
-//                System.out.println("Ótima escolha");
-//
-//                break;
-//            case 3:
-//                carro.setModelo("VOLKSWAGEN");
-//                System.out.println("Ótima escolha");
-//
-//                break;
-//            case 4:
-//                carro.setModelo("TOYOTA");
-//                System.out.println("Ótima escolha");
-//
-//                break;
-//            case 5:
-//                carro.setModelo("RANGER ROVER");
-//                System.out.println("Ótima escolha");
-//
-//                break;
-//            case 0:
-//                System.out.println("Saindo do programa...");
-//                break;
-//            default:
-//                System.out.println("Opção inválida.");
-//        }
+
 
 
         System.out.println("    Escolha a quantidade de portas.");
@@ -127,6 +94,7 @@ public class EscolhaCarro {
         System.out.println("    Marcar escolhida \n" + carro.modelo);
         System.out.println("    Quantidade de portas \n" + carro.qtPortas);
         System.out.println("    Carro escolhido à força \n" + carro.marca);
+        carro.ligarCarro();
 
 
     }
